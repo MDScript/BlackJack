@@ -193,14 +193,16 @@ Module Module1
         Randomize()
 
         player_hand = getHand("p")
+        Console.WriteLine()
         dealer_hand = getHand("d")
-
+        Console.WriteLine()
         Console.WriteLine("Your Hand: ")
 
         For i = 0 To player_hand.Length - 1
             displayCard(player_hand(i))
         Next
 
+        Console.WriteLine()
         While player_hand(player_hand.Length - 1) <> "n"
 
             ReDim Preserve player_hand(player_hand.Length)
@@ -220,9 +222,7 @@ Module Module1
                     Exit While
 
                 End If
-
             End If
-
         End While
 
         Console.WriteLine()
