@@ -264,6 +264,8 @@ Module Module1
             Console.WriteLine("You win, Dealer went bust!")
         ElseIf dealerTot < playerTot And playerTot > 21 Then
             Console.WriteLine("Dealer wins, You went bust!")
+        ElseIf dealerTot = playerTot Then
+            Console.WriteLine("Draw, you had the same scores!")
         End If
 
         Console.WriteLine("Any key to exit")
